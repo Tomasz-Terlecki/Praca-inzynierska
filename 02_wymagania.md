@@ -3,6 +3,7 @@
 ## "To chcę mieć na pewno"
 
 1. Rejestrowanie i logowanie użytkowników 
+   * Rejestracja przez konto Google
    * Widok "Moje konto", w którym znajduje się: 
      * Imię 
      * Nazwisko
@@ -29,18 +30,14 @@
    * Osoby, która zapłaciła za dany wydatek (możliwość wybrania wielu osób) 
 7. Status danego wydatku (zsynchronizowany/niezsynchronizowany) 
 8. Widok "Wszystkie moje wydatki" 
-9. Widok "Wszystkie moje grupy" 
+9.  Widok "Wszystkie moje grupy" 
 10. Widok "Wszystkie moje wydarzenia" 
 11. Widok "Wszystkie wydatki w grupie" 
 12. Widok "Wszystkie wydatki w wydarzeniu" 
 
 ## "Nie wiem czy się opłaca":
-1. Dwie wersje językowe (np. polski i angielski) 
-2. Powiadomienia wysyłane na maila 
+1. Powiadomienia wysyłane na maila 
    * Lista adresów e-mail, na które mają być wysyłane powiadomienia (być może użytkownik chce więcej niż jedno powiadomienie)
-3. Rejestracja przez konto google/facebook 
-4. Opcjonalne korzystanie z algorytmu, który zminimalizuje liczbę transakcji pomiędzy użytkownikami (np. niektórzy przeleją więcej, ale mniejszej liczbie osób, ale dostaną też więcej, również od mniejszej liczby osób) 
-5. Avatar (?) 
 
 ## "Być może, jeśli starczy czasu":
 1. Tagowanie wydatków, np. "podróż", "jedzenie" [ Tag = Znacznik ] 
@@ -58,5 +55,8 @@
    * "Wszystkie wydatki w grupie" 
    * "Wszystkie wydatki w wydarzeniu" 
 7. Możliwość ukrycia/wyciszenia wybranych przez użytkownika grup/wydarzeń 
-7. Scheduler wysyłający powiadomienia na maila  
+8. Scheduler wysyłający powiadomienia na maila  
 (np. po kilku dniach od wpisania wydatku, jeśli dany użytkownik nie zaakceptował ani nie odrzucił wydatku) 
+9. Dwie wersje językowe (np. polski i angielski) 
+10. Opcjonalne korzystanie z algorytmu, który zminimalizuje liczbę transakcji pomiędzy użytkownikami (np. niektórzy przeleją więcej, ale mniejszej liczbie osób, ale dostaną też więcej, również od mniejszej liczby osób) 
+11. Avatar (?) 

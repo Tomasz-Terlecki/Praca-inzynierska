@@ -21,3 +21,7 @@
   - Przegadać to, co przygotowałem 
   - Porozmawiać o tytule pracy oraz jednym akapicie opisu pracy (tytuł oraz opis zgłasza promotor)
   - Zapytać jaki jest następny krok
+
+### Na 22.03:
+- Napisać tytuł pracy oraz wysłać promotorowi mailem do zaakceptowania
+- Napisać jeden akapit/opis pracy i też wysłać mailem
