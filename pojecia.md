@@ -2,17 +2,26 @@
 
 | polskie    | angielskie |
 | ---------- | ---------- |
+| Konto | Account |
 | Użytkownik | User |
-| Wydarzenie | Event (?) |
+| Wydarzenie | Circumstance |
 | Grupa | Group |
-| Raport | Report |
-| Wydatek | Expenditure |
-| Status | Status |
+| Zespół rozliczeniowy (ZR) | Costs calculation team (CCT)|
+|  |  |
+|  |  |
+| Wydatek | Expense |
+| Status [chodzi o status wydatku] | Status |
 | Kwota | Amount |
 | Proporcja | Proportion |
-| Konto | Account |
+| Rozliczenie kosztów | Costs calculation |
 |  |  |
 |  |  |
-| Tag | Znacznik |
+| Raport | Report |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+| Znacznik | Tag |
 | Rola | Role |
 |  |  |

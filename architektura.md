@@ -1,0 +1,57 @@
+## Projekty:
+1. API
+   * AuthController
+     * Register
+     * Login
+   * ExpenseController
+     * Add
+     * Remove
+     * Update
+   * UserController
+     * Add
+     * Remove
+     * Update
+   * CostsCalculationController
+     * CalculateCosts
+   * GroupController
+     * Add
+     * Remove
+     * Update
+     * AddUserToGroup
+     * RemoveUserFromGroup
+   * CircumstanceController
+     * Add
+     * Remove
+     * Update
+     * AddCircumstanceToGroup
+     * RemoveCircumstanceFromGroup
+   * ExpenseController
+     * Add
+     * Remove
+     * Update
+   * ProportionController
+     * ***TODO***
+
+2. Repository
+   * BaseRepository
+     * Add
+     * Remove
+     * Update
+   * UserRepository
+
+3. Model
+   * Klasy:
+     * User
+     * CostsCalculationTeamMember
+     * CostsCalculationTeam
+     * Circumstance
+     * Group
+     * GroupCircumstance
+     * Expense
+     * Proportion
+   * Enumy:
+     * ExpenseStatusEnum
+
+4. ReportGenerating
+   * Report
+   * ReportData
