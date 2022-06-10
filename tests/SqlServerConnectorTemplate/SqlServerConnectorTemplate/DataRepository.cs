@@ -13,8 +13,7 @@ namespace SqlServerConnectorTemplate
         }
 
         public async Task<T> GetByIdAsync<T>(
-            int id, 
-            IEnumerable<Func<T, bool>> conditions = null,
+            int id,
             IEnumerable<string> includes = null
         ) where T : BaseModel
         {
@@ -23,16 +22,12 @@ namespace SqlServerConnectorTemplate
             if (includes != null)
                 foreach (var include in includes)
                     query = query.Include(include).AsQueryable();
-
-            if (conditions != null)
-                foreach (var condition in conditions)
-                    query = query.Where(condition).AsQueryable();
 
             return await query.FirstOrDefaultAsync(model => model.Id == id);
         }
 
         public async Task<IEnumerable<T>> GetManyByConditionAsync<T>(
-            IEnumerable<Func<T, bool>> conditions = null, 
+            Func<T, bool> condition = null, 
             IEnumerable<string> includes = null
         ) where T : BaseModel
         {
@@ -42,9 +37,8 @@ namespace SqlServerConnectorTemplate
                 foreach (var include in includes)
                     query = query.Include(include).AsQueryable();
 
-            if (conditions != null)
-                foreach (var condition in conditions)
-                    query = query.Where(condition).AsQueryable();
+            if (condition != null)
+                query = query.Where(condition).AsQueryable();
 
             return await query.ToListAsync();
         }
@@ -99,11 +93,11 @@ namespace SqlServerConnectorTemplate
             return await _dbContext.Set<T>().ContainsAsync(model);
         }
 
-        public async Task<int> Count<T>(Func<T, bool> condition = null) where T : BaseModel
+        public async Task<int> CountAsync<T>(Func<T, bool> condition = null) where T : BaseModel
         {
             return condition == null 
-                ? await _dbContext.Set<T>().CountAsync() 
-                : await _dbContext.Set<T>().CountAsync(condition);
+                ? await _dbContext.Set<T>().CountAsync()
+                : _dbContext.Set<T>().Count(condition);
         }
     }
 }

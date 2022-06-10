@@ -33,11 +33,16 @@
      * ***TODO***
 
 2. Repository
-   * BaseRepository
-     * Add
-     * Remove
-     * Update
-   * UserRepository
+   * DataRepository
+     * GetByIdAsync
+     * GetManyByConditionAsync
+     * AddAsync
+     * AddRangeAsync
+     * UpdateAsync
+     * RemoveAsync
+     * RemoveRangeAsync
+     * ContainsAsync
+     * CountAsync
 
 3. Model
    * Klasy:

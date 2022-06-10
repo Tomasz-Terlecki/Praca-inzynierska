@@ -1,6 +1,17 @@
 ﻿using SqlServerConnectorTemplate;
 using SqlServerConnectorTemplate.Models;
 
-var dataRepository = new DataRepository();
+public class Program
+{
+    public static bool childrenNumberEqualsToZero(Parent parent)
+    {
+        return parent.Children.Count() != 0;
+    }
 
-dataRepository.Add(new Child());
+    public static async void Main()
+    {
+        var dataRepository = new DataRepository();
+
+        var ch = await dataRepository.GetManyByConditionAsync<Parent>(Program.childrenNumberEqualsToZero, new string[] {});
+    }
+}
