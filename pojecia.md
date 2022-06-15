@@ -22,6 +22,8 @@
 |  |  |
 |  |  |
 |  |  |
+| Aktywność | Activity |
+| Dziennik aktywności | Activity log |
 | Znacznik | Tag |
 | Rola | Role |
 |  |  |
