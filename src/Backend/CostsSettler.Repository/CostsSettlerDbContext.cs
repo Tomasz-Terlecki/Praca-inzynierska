@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CostsSettler.Model.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CostsSettler.Repository
 {
@@ -11,6 +12,8 @@ namespace CostsSettler.Repository
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Expense>();
+
             base.OnModelCreating(modelBuilder);
         }
     }
