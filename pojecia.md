@@ -7,6 +7,7 @@
 | Wydarzenie | Circumstance |
 | Grupa | Group |
 | Zespół rozliczeniowy (ZR) | Costs calculation team (CCT)|
+| Członek grupy | Group member |
 |  |  |
 |  |  |
 | Wydatek | Expense |

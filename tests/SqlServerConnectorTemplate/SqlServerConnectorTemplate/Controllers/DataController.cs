@@ -2,10 +2,10 @@ namespace SqlServerConnectorTemplate.Controllers
 {
     public class DataController
     {
-        [HttpGet]
+        /*[HttpGet]
         public async Task<IActionResult> Get<T>()
         {
             
-        }
+        }*/
     }
 }

@@ -8,10 +8,10 @@ public class Program
         return parent.Children.Count() != 0;
     }
 
-    public static async void Main()
+    public static void Main()
     {
         var dataRepository = new DataRepository();
 
-        var ch = await dataRepository.GetManyByConditionAsync<Parent>(Program.childrenNumberEqualsToZero, new string[] {});
+        // var ch = await dataRepository.GetManyByConditionAsync<Parent>(Program.childrenNumberEqualsToZero, new string[] {});
     }
 }
