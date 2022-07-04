@@ -1,0 +1,6 @@
+<button (click)="signIn()" *ngIf="user === null">Google sign in</button>
+<button (click)="signOut()" *ngIf="user">Google sign out</button>
+
+<div *ngIf="user">
+  <div>You are signed in with google! {{user.getBasicProfile().getName()}}</div>
+</div>
