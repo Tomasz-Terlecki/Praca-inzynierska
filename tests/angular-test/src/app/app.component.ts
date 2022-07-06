@@ -1,30 +1,38 @@
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { GoogleSigninService } from './google-signin.service';
-
+import { Component, OnInit } from '@angular/core';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
+import {
+  SocialAuthService,
+  GoogleLoginProvider,
+  SocialUser,
+} from '@abacritt/angularx-social-login';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  title = 'angular-test';
-
-  user: gapi.auth2.GoogleUser;
-
-  constructor(private signInService: GoogleSigninService, private ref: ChangeDetectorRef) {}
-  
-  ngOnInit(): void {
-    this.signInService.observable().subscribe(user => {
-      this.user = user;
-      this.ref.detectChanges();
-    })
+  loginForm!: UntypedFormGroup;
+  socialUser!: SocialUser;
+  isLoggedin?: boolean;
+  constructor(
+    private formBuilder: UntypedFormBuilder,
+    private socialAuthService: SocialAuthService
+  ) {}
+  ngOnInit() {
+    this.loginForm = this.formBuilder.group({
+      email: ['', Validators.required],
+      password: ['', Validators.required],
+    });
+    this.socialAuthService.authState.subscribe((user) => {
+      this.socialUser = user;
+      this.isLoggedin = user != null;
+      console.log(this.socialUser);
+    });
   }
-
-  signIn() {
-    this.signInService.signIn();
+  loginWithGoogle(): void {
+    this.socialAuthService.signIn(GoogleLoginProvider.PROVIDER_ID);
   }
-
-  signOut() {
-    this.signInService.signOut();
+  logOut(): void {
+    this.socialAuthService.signOut();
   }
 }
