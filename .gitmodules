@@ -1,3 +1,3 @@
-[submodule "tests/git-test/CostsSettler"]
-	path = tests/git-test/CostsSettler
+[submodule "CostsSettler"]
+	path = CostsSettler
 	url = https://dev.azure.com/tterlecki99/_git/CostsSettler
